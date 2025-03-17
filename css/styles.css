@@ -559,7 +559,7 @@ border: none;
   background: rgba(46, 47, 66, 0.4);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay.is-open {
@@ -600,6 +600,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
 }
 .modal-close-btn:hover {
   border: none;
+  background-color: #404bbf;
   }
 .modal-close-btn:focus  {
   background-color: #404bbf; 
@@ -608,7 +609,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
 .icon-form {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.modal-close-btn .icon-form:hover, .modal-close-btn .icon-form:focus {
+.icon-form:hover, .icon-form:focus {
   fill: #ffffff;
   }
 
@@ -651,8 +652,7 @@ margin-bottom: 4px;
   background-color: transparent;
   padding-left: 38px; 
   outline: transparent;
-  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-color: #4D5AE5;
+  border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-form {
   position: absolute;
@@ -661,7 +661,7 @@ margin-bottom: 4px;
   transform: translateY(-50%); 
   fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
-.contact-form-input .icon-form:focus {
+.icon-form .contact-form-input:focus {
   fill: #4D5AE5;
 }
 .contact-form-comment-input {
@@ -683,9 +683,10 @@ margin-bottom: 16px;
   padding: 8px 16px; 
   outline: transparent;
   resize: none;
-  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-  width: 100%;
+  border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  width: 100%; 
   height: 120px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .contact-form-input-textarea:focus {
   border-color: #4D5AE5;
@@ -721,7 +722,7 @@ width: 169px;
 height: 56px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background: #4d5ae5;
-background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
