@@ -296,7 +296,7 @@
         <form class="contact_form" name="contacts_form" autocomplete="off" novalidate>
         
           <div class="contact-form-field"> 
-          <label class="contact-form-label" for="contact-name"> Name</label>
+          <label class="contact-form-label" for="contact-name" id="contact-name"> Name</label>
          <div class="contact-input-container">
           <svg class="icon-form" width="16" height="16"> 
             <use href="./images/icons.svg#icon-person"></use>
@@ -306,7 +306,7 @@
         </div>
           
         <div class="contact-form-field"> 
-          <label class="contact-form-label" for="contact-phone"> Phone</label>
+          <label class="contact-form-label" for="contact-phone" id="contact-phone"> Phone</label>
           <div class="contact-input-container">
           <svg class="icon-form" width="16" height="16"> 
             <use href="./images/icons.svg#icon-phone"></use>
@@ -316,7 +316,7 @@
         </div>
           
         <div class="contact-form-field"> 
-          <label class="contact-form-label" for="contact-email"> Email</label>
+          <label class="contact-form-label" for="contact-email" id="contact-email"> Email</label>
           <div class="contact-input-container">
           <svg class="icon-form" width="16" height="16"> 
             <use href="./images/icons.svg#icon-email"></use>
@@ -326,13 +326,13 @@
         </div>
           
         <div class="contact-form-comment-input">
-          <label class="contact-form-label" for="contact-comment"> Comment</label>
+          <label class="contact-form-label" for="contact-comment" id="contact-comment"> Comment</label>
             <textarea class="contact-form-input" name="comment" rows="5" placeholder="Text input"></textarea>
           </div>
           
           <div class="contact-form-checkbox">
             <input class="checkbox visually-hidden" type="checkbox" name="userprivacy" value="true" />
-          <label class="contact-form-label" for="contact-privacy"> 
+          <label class="contact-form-label" for="contact-privacy" id="contact-privacy"> 
             
             <span class="span-checkbox"> 
               <svg width="10" height="8">
@@ -389,12 +389,13 @@
         <div class="footer-form-container">
           <p class="footer-form-title">Subscribe</p>
           <form name="footer_subscribe" class="footer-form">
-
-          <input class="footer-input-subscribe" type="email" placeholder="E-mail">
+            <label for="footer-form-label" id="footer-form-label"> 
+              <input class="footer-input-subscribe" type="email" placeholder="E-mail">
+            </label>
 
           <button class="footer-subscribe-btn" type="submit">Subscribe
 
-          <svg class="icon-plane" width="24" height="20"> 
+          <svg class="icon-plane" width="24" height="24"> 
             <use href="./images/icons.svg#icon-plane"></use>
           </svg>
         </button>

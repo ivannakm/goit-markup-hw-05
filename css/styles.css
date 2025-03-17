@@ -496,26 +496,56 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #fff;
+margin-bottom: 16px;
 }
 .footer-form {
+  display: flex; 
+  gap: 24px;
+}
+.footer-form-label {
 
 }
-.footer-input-subscribe {
 
+.footer-input-subscribe {
+border: 1px solid #fff;
+border-radius: 4px;
+width: 264px;
+height: 40px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+background-color: transparent;
+
+font-size: 12px;
+letter-spacing: 0.04em;
+padding-left: 16px; 
+color: #ffffff;
+}
+.footer-input-subscribe ::placeholder {
+  color #ffffff; 
 }
 .footer-subscribe-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+display: flex;
+justify-content: center;
+align-items: center;
 
 border-radius: 4px;
 padding: 8px 24px;
 width: 165px;
 height: 40px;
 background: #4d5ae5;
+min-width: 165px; 
+
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+text-align: center;
+color: #fff;
+border: none; 
 }
+
 .icon-plane {
   fill: #fff;
+  margin-left: 16px;
 }
 
 /* #region Modal window contact form */
@@ -630,7 +660,4 @@ letter-spacing: 0.04em;
 text-align: center;
 color: #fff;
 }
-
-
-
 /* #endregion Modal window contact form */
