@@ -466,6 +466,7 @@ margin-bottom: 16px;
 .social_media {
   display: flex;
   flex-direction: column;
+  margin-right: 80px;
 }
 footer .social_links {
 gap: 16px;
@@ -503,9 +504,7 @@ margin-bottom: 16px;
   gap: 24px;
 }
 .footer-form-label {
-
 }
-
 .footer-input-subscribe {
 border: 1px solid #fff;
 border-radius: 4px;
@@ -513,27 +512,25 @@ width: 264px;
 height: 40px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background-color: transparent;
-
 font-size: 12px;
 letter-spacing: 0.04em;
 padding-left: 16px; 
 color: #ffffff;
+line-height: 2; 
 }
 .footer-input-subscribe ::placeholder {
-  color #ffffff; 
+  color: #ffffff;
 }
 .footer-subscribe-btn {
 display: flex;
 justify-content: center;
 align-items: center;
-
 border-radius: 4px;
 padding: 8px 24px;
 width: 165px;
 height: 40px;
 background: #4d5ae5;
 min-width: 165px; 
-
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -542,7 +539,6 @@ text-align: center;
 color: #fff;
 border: none; 
 }
-
 .icon-plane {
   fill: #fff;
   margin-left: 16px;
@@ -564,7 +560,6 @@ border: none;
   opacity: 0;
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay.is-open {
@@ -588,12 +583,35 @@ border: none;
 }
 
 .modal-close-btn {
-  border-radius: 4px;
+border-radius: 4px;
 width: 24px;
 height: 24px;
+position: absolute;
+top: 24px;
+right: 24px;
+border-radius: 50%;
+display: flex;
+align-items: center; 
+justify-content: center;
+background-color: #e7e9fc; 
+border: 1px solid rgba(0, 0, 0, 0.1);
+padding: 0;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
+.modal-close-btn:hover {
+  border: none;
+  }
+.modal-close-btn:focus  {
+  background-color: #404bbf; 
+  border: none;
+    }
 .icon-form {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
+.modal-close-btn .icon-form:hover, .modal-close-btn .icon-form:focus {
+  fill: #ffffff;
+  }
+
 .modal-form-text {
   font-weight: 500;
   font-size: 16px;
@@ -601,6 +619,7 @@ height: 24px;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42; 
+  margin-bottom: 16px;
 }
 .contact_form {
 }
@@ -609,6 +628,7 @@ border: 1px solid #4d5ae5;
 border-radius: 4px;
 width: 360px;
 height: 40px;
+margin-bottom: 8px;
 }
 .contact-form-label {
 font-weight: 400;
@@ -616,28 +636,77 @@ font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.04em;
 color: #8e8f99;
+line-height: 1.17;
+display: block;
+margin-bottom: 4px;
 }
 .contact-input-container {
+  position: relative;
 }
 .contact-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4); 
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 38px; 
+  outline: transparent;
+  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: #4D5AE5;
+}
+.icon-form {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%); 
+  fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+}
+.contact-form-input .icon-form:focus {
+  fill: #4D5AE5;
 }
 .contact-form-comment-input {
 border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 4px;
 width: 360px;
 height: 120px;
+margin-bottom: 16px;
+}
+.contact-form-input-textarea {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px; 
+  background-color: transparent;
+  padding: 8px 16px; 
+  outline: transparent;
+  resize: none;
+  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  width: 100%;
+  height: 120px;
+}
+.contact-form-input-textarea:focus {
+  border-color: #4D5AE5;
 }
 .contact-form-checkbox {
 border-radius: 2px;
 border: 1px solid rgba(46, 47, 66, 0.4);
-
-}
-.checkbox {
-
+margin-bottom: 24px; 
 }
 .visually-hidden {
 }
 .span-checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
 }
 .privacy-link {
 line-height: 1.33;
@@ -652,12 +721,15 @@ width: 169px;
 height: 56px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background: #4d5ae5;
-
+background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
 text-align: center;
 color: #fff;
+display: block;
+min-width: 169px;
+border: none;
 }
 /* #endregion Modal window contact form */
