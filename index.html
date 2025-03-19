@@ -23,8 +23,8 @@
           <a href="./index.html" class="logo"> Web<span class="web">Studio</span></a>
           <ul class="menu">
             <li class="header"><a href="./index.html" class="header_link header_link_studio">Studio</a></li>
-            <li class="header"><a href="" class="header_link">Portfolio</a></li>
-            <li class="header"><a href="" class="header_link">Contacts</a></li>
+            <li class="header"><a href="#our-portfolio" class="header_link">Portfolio</a></li>
+            <li class="header"><a href="#footer" class="header_link">Contacts</a></li>
           </ul>
         </nav>
         <address class="contact_info">
@@ -199,7 +199,7 @@
       </section>
 <!-- Section 4 Our Portfolio -->
 
-      <section class="portfolio_section">
+      <section  id="our-portfolio" class="portfolio_section">
         <div class="container">
         <h2 class="our_portfolio">Our Portfolio</h2>
         <ul class="portfolio_list">
@@ -282,7 +282,7 @@
     </main>
          
 <!-- Footer -->
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="container">
         <div class="footer_logo_text">
       <a href="./index.html" class="logo_web"> Web<span class="web_logo">Studio</span></a>
@@ -395,12 +395,24 @@
           </div>
 
           <button class="form-submit-btn" type="submit">Send</button>
-        
         </form>
 
 
       </div>
     </div>
+    
+    <script>
+      // close modal
+      document
+        .querySelector(".modal-close-btn")
+        .addEventListener("click", () => {
+          document.querySelector(".modal-overlay").classList.remove("is-open");
+        });
+        // open modal
+      document.querySelector(".button").addEventListener("click", () => {
+        document.querySelector(".modal-overlay").classList.add("is-open");
+      });
+    </script>
 
 </body>
 </html>
