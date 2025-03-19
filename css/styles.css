@@ -539,6 +539,9 @@ text-align: center;
 color: #fff;
 border: none; 
 }
+.footer-subscribe-btn:hover, .footer-subscribe-btn:hover {
+  background-color: #404bbf;
+  }
 .icon-plane {
   fill: #fff;
   margin-left: 16px;
